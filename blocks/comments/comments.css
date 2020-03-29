@@ -1,0 +1,142 @@
+@import url('./__contener/comments__contener.css');
+@import url('./__image/comment__image.css');
+@import url('./__quote/comment__quote.css');
+@import url('./__quote-author/comment__quote-author.css');
+
+.comments{
+    margin: 100px auto 0 auto;
+    width: 100%;
+}
+.comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .comments {
+        max-width: 660px;
+    }
+    .comments__contener {
+        max-width: 382px;
+        margin: 70px auto 0 auto;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 48px;
+    }
+    .comment__image {
+        margin: 0 auto;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+    }
+    .comment {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .comment__quote-author {
+        text-align: center;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        margin: 16px 0 auto 0;
+    }
+    .comment__quote {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 24px 0 0 0;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .comments {
+        max-width: 343px;
+    }
+    .comments__contener {
+        max-width: 343px;
+        margin: 48px auto 0 auto;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 48px;
+    }
+    .comment__image {
+        margin: 0 auto;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+    }
+    .comment {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .comment__quote-author {
+        text-align: center;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        margin: 16px 0 auto 0;
+    }
+    .comment__quote {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 24px 0 0 0;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .comments {
+        max-width: 288px;
+    }
+    .comments__contener {
+        max-width: 288px;
+        margin: 40px auto 0 auto;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 48px;
+    }
+    .comment__image {
+        margin: 0 auto;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+    }
+    .comment {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .comment__quote-author {
+        text-align: center;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        margin: 16px 0 auto 0;
+    }
+    .comment__quote {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 24px 0 0 0;
+    }
+}

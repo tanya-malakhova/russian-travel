@@ -1,0 +1,9 @@
+.card__link{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+.card__link:hover {
+    opacity: 0.5;
+}

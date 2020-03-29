@@ -1,0 +1,11 @@
+.card__title {
+    font-size: 72px;
+    line-height: 65px;
+    font-weight: bolder;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    text-align: start;
+    margin: 0;
+    color: #FFFFFF;
+}

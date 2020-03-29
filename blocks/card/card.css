@@ -1,0 +1,113 @@
+@import url('./__content/card__content.css');
+@import url('./__title/card__title.css');
+@import url('./__website/card__website.css');
+@import url('./__link/card__link.css');
+@import url('./__link-name/card__link-name.css');
+@import url('./__image/card__image.css');
+@import url('./__paragraph/card__paragraph.css');
+
+.card {
+    margin: 92px auto 0 auto;
+    max-width: 984px;
+    display: -ms-grid;
+    display: grid;
+    grid-row-gap:72px;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .card__content{
+        -ms-grid-columns: 440px 32px 456px;
+        grid-template-columns: 440px 456px;
+        -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-row-gap:40px;
+        grid-column-gap:32px;
+    }
+    .card__content > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .card__content > *:nth-child(2){
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .card {
+        margin: 102px auto 0 auto;
+        max-width: 720px;
+    }
+    .card__content{
+        -ms-grid-columns: 340px 28px 352px;
+        grid-template-columns: 340px 352px;
+        grid-row-gap:40px;
+        grid-column-gap:28px;
+    }
+    .card__paragraph{
+        grid-row-gap:24px;
+    }
+    .card__paragraph-item{
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .card {
+        margin: 102px auto 0 auto;
+        max-width: 720px;
+    }
+    .card__website {
+        display: none;
+    }
+    .card__content{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 32px;
+    }
+    .card__title {
+        font-size: 32px;
+        line-height: 35px;
+        max-width: 343px;
+        margin: 0 auto;
+    }
+    .card__paragraph{
+        grid-row-gap:24px;
+    }
+    .card__paragraph-item{
+        font-size: 16px;
+        line-height: 27px;
+        max-width: 343px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .card {
+        margin: 64px auto 0 auto;
+        max-width: 320px;
+    }
+    .card__website {
+        display: none;
+    }
+    .card__content{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 32px;
+    }
+    .card__title {
+        font-size: 32px;
+        line-height: 35px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .card__paragraph{
+        grid-row-gap:24px;
+    }
+    .card__paragraph-item{
+        font-size: 16px;
+        line-height: 27px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,14 @@
+.card__paragraph{
+    -ms-grid-row-align: start;
+        align-self: start;
+    display: -ms-grid;
+    display: grid;
+    grid-row-gap:36px;
+}
+.card__paragraph-item{
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
